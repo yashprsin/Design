@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,68 @@
     <!--    Css Links -->
     <link rel="stylesheet" href="assert/css/main-style.css">
 </head>
+
 <body>
-    <header>
-        
-    </header>
-    <!--    Js Links -->
-    <script src="assert/js/main.js"></script>
+    <header class="header" data-visible="false" data-nav-theme="light" data-shrink="false" data-panel-theme="dark">
+        <div class="container header__container">
+            <div class="header__col header__nav-wrap">
+                <a class="header__home-link" href="#hero" aria-label="Back to top">
+                    <svg width="34.66mm" height="5.8208mm" version="1.1" viewBox="0 0 34.66 5.8208" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs>
+                         <pattern id="pattern51088" patternTransform="matrix(.26458 0 0 .24088 -1.823e-7 -2.849e-6)" xlink:href="#pattern50938"/>
+                         <pattern id="pattern50938" width="131" height="24.164886" patternTransform="translate(-6.89e-7 -1.1827e-5)" patternUnits="userSpaceOnUse">
+                          <g transform="matrix(.28844 0 0 .33281 -33.725 -59.744)" style="shape-inside:url(#rect27179);white-space:pre" aria-label="OneZero">
+                           <path d="m152.92 192.59q-8.25 0-12.797 6.0938-4.5469 6.0938-4.5469 17.156 0 11.016 4.5469 17.109 4.5469 6.0938 12.797 6.0938 8.2969 0 12.844-6.0938 4.5469-6.0938 4.5469-17.109 0-11.062-4.5469-17.156-4.5469-6.0938-12.844-6.0938zm0-13.078q16.875 0 26.438 9.6562t9.5625 26.672q0 16.969-9.5625 26.625t-26.438 9.6562q-16.828 0-26.438-9.6562-9.5625-9.6562-9.5625-26.625 0-17.016 9.5625-26.672 9.6094-9.6562 26.438-9.6562z"/>
+                           <path d="m254.6 218.8v31.969h-16.875v-24.469q0-6.7969-0.32812-9.375-0.28125-2.5781-1.0312-3.7969-0.98438-1.6406-2.6719-2.5312-1.6875-0.9375-3.8438-0.9375-5.25 0-8.25 4.0781-3 4.0312-3 11.203v25.828h-16.781v-52.5h16.781v7.6875q3.7969-4.5938 8.0625-6.75 4.2656-2.2031 9.4219-2.2031 9.0938 0 13.781 5.5781 4.7344 5.5781 4.7344 16.219z"/>
+                           <path d="m322.56 224.38v4.7812h-39.234q0.60937 5.9062 4.2656 8.8594 3.6562 2.9531 10.219 2.9531 5.2969 0 10.828-1.5469 5.5781-1.5938 11.438-4.7812v12.938q-5.9531 2.25-11.906 3.375-5.9531 1.1719-11.906 1.1719-14.25 0-22.172-7.2188-7.875-7.2656-7.875-20.344 0-12.844 7.7344-20.203 7.7812-7.3594 21.375-7.3594 12.375 0 19.781 7.4531 7.4531 7.4531 7.4531 19.922zm-17.25-5.5781q0-4.7812-2.8125-7.6875-2.7656-2.9531-7.2656-2.9531-4.875 0-7.9219 2.7656-3.0469 2.7188-3.7969 7.875z"/>
+                           <path d="m332.6 180.78h58.828v10.922l-37.547 45.422h38.625v13.641h-60.984v-10.922l37.547-45.422h-36.469z"/>
+                           <path d="m457.28 224.38v4.7812h-39.234q0.60937 5.9062 4.2656 8.8594 3.6562 2.9531 10.219 2.9531 5.2969 0 10.828-1.5469 5.5781-1.5938 11.438-4.7812v12.938q-5.9531 2.25-11.906 3.375-5.9531 1.1719-11.906 1.1719-14.25 0-22.172-7.2188-7.875-7.2656-7.875-20.344 0-12.844 7.7344-20.203 7.7812-7.3594 21.375-7.3594 12.375 0 19.781 7.4531 7.4531 7.4531 7.4531 19.922zm-17.25-5.5781q0-4.7812-2.8125-7.6875-2.7656-2.9531-7.2656-2.9531-4.875 0-7.9219 2.7656-3.0469 2.7188-3.7969 7.875z"/>
+                           <path d="m508.99 212.56q-2.2031-1.0312-4.4062-1.5-2.1562-0.51563-4.3594-0.51563-6.4688 0-9.9844 4.1719-3.4688 4.125-3.4688 11.859v24.188h-16.781v-52.5h16.781v8.625q3.2344-5.1562 7.4062-7.5 4.2188-2.3906 10.078-2.3906 0.84375 0 1.8281 0.0937 0.98437 0.0469 2.8594 0.28125z"/>
+                           <path d="m542.31 209q-5.5781 0-8.5312 4.0312-2.9062 3.9844-2.9062 11.531 0 7.5469 2.9062 11.578 2.9531 3.9844 8.5312 3.9844 5.4844 0 8.3906-3.9844 2.9062-4.0312 2.9062-11.578 0-7.5469-2.9062-11.531-2.9062-4.0312-8.3906-4.0312zm0-12q13.547 0 21.141 7.3125 7.6406 7.3125 7.6406 20.25t-7.6406 20.25q-7.5938 7.3125-21.141 7.3125-13.594 0-21.281-7.3125-7.6406-7.3125-7.6406-20.25t7.6406-20.25q7.6875-7.3125 21.281-7.3125z"/>
+                          </g>
+                         </pattern>
+                        </defs>
+                        <text transform="scale(.26458)" fill="#000000" font-family="sans-serif" font-size="40px" style="line-height:1.25;shape-inside:url(#rect25061);white-space:pre" xml:space="preserve"/>
+                        <rect x="-1.823e-7" y="-3.1293e-6" width="34.66" height="5.8208" fill="url(#pattern51088)"/>
+                        <text transform="scale(.26458)" fill="#000000" font-family="sans-serif" font-size="40px" style="line-height:1.25;shape-inside:url(#rect52586);white-space:pre" xml:space="preserve"/>
+                        <rect x="-1.823e-7" y="-3.1293e-6" width="34.66" height="5.8208" fill="url(#pattern51088)"/>
+                        <text transform="scale(.26458)" fill="#000000" font-family="sans-serif" font-size="40px" style="line-height:1.25;shape-inside:url(#rect52594);white-space:pre" xml:space="preserve"/>
+                        <rect x="-1.823e-7" y="-3.1293e-6" width="34.66" height="5.8208" fill="url(#pattern51088)"/>
+                       </svg>
+
+                </a>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__list-item" data-active="false">
+                            <a href="/#manifesto" class="header__list-item-link" data-scroll-target="manifesto">Manifesto</a>
+                        </li>
+                        <li class="header__list-item" data-active="false">
+                            <a href="/#team" class="header__list-item-link" data-scroll-target="team">Team</a>
+                        </li>
+                        <li class="header__list-item" data-active="false">
+                            <a href="/#news" class="header__list-item-link" data-scroll-target="news">News</a>
+                        </li>
+                        <li class="header__list-item" data-active="false">
+                            <a href="/#jobs" class="header__list-item-link" data-scroll-target="jobs">Jobs</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__col header__pill-wrap">
+                <div class="header__pill p3">
+                    <div class="header__pill-label" data-type="chars">Get notified</div>
+
+                    <div class="header__canvas-wrap">
+                        <canvas id="header-button-canvas"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 
+           ,"San Francisco",HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue","Segoe UI","Fira Sans",Roboto,Oxygen,Ubuntu,"Droid Sans",Arial,"Microsoft YaHei",sans-serif
+         -->
+        <!--    Js Links -->
+        <script src="assert/js/main.js"></script>
 </body>
+
 </html>
