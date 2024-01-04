@@ -1,110 +1,69 @@
-/*
- This is a simple CSS boilerplate. It includes
- basic CSS resets and basic styling for the html
- tags. You can customize this according to your needs.
-*/
-
-/* CSS Reset */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+*{
     margin: 0;
     padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
 }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
-
-body {
-    line-height: 1;
-}
-
-/* Style for basic HTML tags */
-body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #f2f2f2;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    color: #444;
-}
-
-h1 {
-    font-size: 2em;
-}
-
-h2 {
-    font-size: 1.8em;
-}
-
-h3 {
-    font-size: 1.6em;
-}
-
-h4 {
-    font-size: 1.4em;
-}
-
-h5 {
-    font-size: 1.2em;
-}
-
-h6 {
-    font-size: 1em;
-}
-
-a {
-    color: #0076d6;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-blockquote {
-    margin: 1em 40px;
-    padding: 0 10px;
-    border-left: 5px solid #ddd;
-}
-
-pre {
-    white-space: pre-wrap;
-    word-wrap: break-word;
-}
-
-table {
+html,body{
+    height: 100%;
     width: 100%;
-    border-collapse: collapse;
 }
-
-table, th, td {
-    border: 1px solid #ccc;
+.page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #efeae3;
+    position: relative;
 }
-
-th, td {
-    padding: 8px;
-    text-align: left;
+header{
+    padding: 2vw 2vw;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
 }
-
-th {
-    background-color: #f2f2f2;
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap : 1vw;
+    text-decoration: none;
+    
+}
+nav ul li{
+    padding: 10px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.45);
+    border-radius: 50px;
+    font-size: 18px;
+    position: relative;
+    color: #000;
+    transition: all ease 0.4s;
+    font-weight: 500;
+    overflow: hidden;
+}
+nav ul li::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+}
+nav ul li:hover::after{
+    bottom: 0;
+    border-radius: 0;
+    color: #fff;
+}
+nav ul li a{
+    text-decoration: none;
+    position: relative;
+    z-index: 9;
+    color: #000000bb;
+}
+nav ul li a:hover{
+    color: #fff;
 }
