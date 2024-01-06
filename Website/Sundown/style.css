@@ -1,26 +1,63 @@
+@font-face {
+    font-family: neu;
+    src: url(../Sundown/src/NeueHaasDisplayMediu.ttf);
+}
+
+@font-face {
+    font-family: neu;
+    font-weight: 100;
+    src: url(../Sundown/src/NeueHaasDisplayLight.ttf);
+    
+}
+
+@font-face {
+    font-family: neu;
+    font-weight: 200;
+    src: url(../Sundown/src/NeueHaasDisplayRoman.ttf); 
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gilroy';
+    font-family: neu;
 }
 html,body{
     height: 100%;
     width: 100%;
 }
 .page1{
-    height: 100vh;
+    padding: 2em 2em 2em 2em;
+    min-height: 100vh;
     width: 100%;
     background-color: #efeae3;
     position: relative;
+
 }
 header{
-    padding: 2vw 2vw;
     height: 100px;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo img{
+   width: 9.375em;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    color: #0b0500;
+    object-fit: cover;
+    position: static;
+}
+nav{
+    grid-column-gap: 0.5em;
+    align-items: center;
+    display: flex;
+    position: static;
 }
 nav ul{
     display: flex;
@@ -32,13 +69,13 @@ nav ul{
 }
 nav ul li{
     padding: 10px 20px;
-    border: 1px solid rgba(0, 0, 0, 0.45);
-    border-radius: 50px;
+    border: 1px solid rgba(11,5,0,.2);
+    border-radius: 100vw;
     font-size: 18px;
     position: relative;
-    color: #000;
+    color: #333;
     transition: all ease 0.4s;
-    font-weight: 500;
+    font-weight: 100;
     overflow: hidden;
 }
 nav ul li::after{
@@ -64,6 +101,147 @@ nav ul li a{
     z-index: 9;
     color: #000000bb;
 }
-nav ul li a:hover{
+nav ul li:hover a{
     color: #fff;
+}
+.main-text{
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+    padding-bottom: 3.75em;
+}
+.left{
+    width: 26em;
+    letter-spacing: -.03em;
+    
+}
+.left h2{
+    font-size: 2em;
+    letter-spacing: -.03em;
+    line-height: 1;
+    color: #0b0500;
+}
+.right h1{
+    z-index: 1;
+    letter-spacing: -.03em;
+    text-transform: uppercase;
+    /* font-family: Neuehaasdisplay mediu,sans-serif; */
+    font-size: 10vw;
+    line-height: 8vw;
+    text-align: right;
+    /* position: relative; */
+}
+.page1 video{
+    width: 100%;
+    border-radius: 30px;
+    margin-top: 4vw;
+    position: relative;
+}
+.hero-shape{
+    position: absolute;
+    width: 36vw;
+    height: 36vw;
+    
+    right: 0;
+    top: 75vh;
+    filter: blur(20px);
+}
+.shape-1{
+    width: 100%;
+    height: 100%;
+    background-color: #fe320a;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    position: absolute;
+}
+.shape-2{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#fe320a, #fe3f0a);
+    position: absolute;
+    border-radius: 50%;
+    animation-name: shapeanimation-2;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.shape-3{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#fe320a, #fe3f0a);
+    border-radius: 50%;
+    border-radius: 50%;
+    position: absolute;
+    animation-name: shapeanimation-1;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes shapeanimation-1 {
+    from{
+        transform: translate(55%,-3%);
+    }
+    to{
+        transform: translate(0%,10%);
+    }
+}
+@keyframes shapeanimation-2 {
+    from{
+        transform: translate(5%,-5%);
+    }
+    to{
+        transform: translate(-30%,20%);
+    }
+}
+.page2{
+    min-height: 100vh;
+    padding: 8vw 0;
+    width: 100%;
+    position: relative;
+    background-color: #efeae3;
+}
+.moving-text {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.moving-text::-webkit-scrollbar {
+    display: none;
+}
+
+.words {
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: move;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.moving-text h1 {
+    font-size: 9vw;
+    display: inline-block;
+}
+
+.red-circle-shape {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #FE320A;
+    margin: 1vw 2vw;
+}
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
 }
