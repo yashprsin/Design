@@ -1,19 +1,19 @@
 @font-face {
     font-family: neu;
-    src: url(../Sundown/src/NeueHaasDisplayMediu.ttf);
+    src: url(../Sundown/src/font/NeueHaasDisplayMediu.ttf);
 }
 
 @font-face {
     font-family: neu;
     font-weight: 100;
-    src: url(../Sundown/src/NeueHaasDisplayLight.ttf);
+    src: url(../Sundown/src/font/NeueHaasDisplayLight.ttf);
     
 }
 
 @font-face {
     font-family: neu;
     font-weight: 200;
-    src: url(../Sundown/src/NeueHaasDisplayRoman.ttf); 
+    src: url(../Sundown/src/font/NeueHaasDisplayRoman.ttf); 
 }
 *{
     margin: 0;
@@ -108,6 +108,9 @@ nav ul li a{
 }
 nav ul li:hover a{
     color: #fff;
+}
+header .menu{
+    display: none;
 }
 .main-text{
     height: 75vh;
@@ -262,11 +265,12 @@ nav ul li:hover a{
     z-index: 9;
 }
 .page2-extend h2{
-    font-size: 3.5vw;
-    width: 50%;
+    font-size: 4vw;
+    width: 58%;
     line-height: 4vw;
 }
 .image-tile{
+    padding-top: 25vw;
     width: 20%;
 }
 .image-tile img{
@@ -316,6 +320,28 @@ nav ul li:hover a{
     background-color: #EFEAE3;
     padding: 4vw 0;
 }
+
+.page-heading{
+    position: relative;
+    padding: 0 2vw;
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+    /* background-color: #EFEAE3;  */
+    padding-bottom: 1vw;
+}
+.bullets{
+    width: 15px;
+    height: 15px;
+    background-color: #FE320A;
+    border-radius: 50%;
+}
+.page-heading h4{
+    font-weight: 100;
+    font-size: 0.875em;
+    letter-spacing: 0.2em;
+    line-height: 1.2;
+}
 .element{
     height: 150px;
     width: 100%;
@@ -345,6 +371,7 @@ nav ul li:hover a{
 }
 .fixed-image{
     height: 30vw;
+    overflow: hidden;
     width: 24vw;
     background-color: red;
     border-radius: 10px;
@@ -352,9 +379,29 @@ nav ul li:hover a{
     z-index: 99;
     left: 50%;
     top: 25%;
+    transition: all ease-in-out 0.2s;
     display: none;
     background-size: cover;
     background-position: center;
+}
+.btn-project{
+    position: relative;
+    padding: 4vw 2vw;
+}
+.btn-project button a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: 200;
+    font-size: 1vw;
+}
+.btn-project button{
+    padding: 15px 40px;
+    color: #000000;
+    
+    /* letter-spacing: 0.1em; */
+    background: none;
+    border: 1px solid  #00000056;
+    border-radius: 30px;
 }
 .page4{
     width: 100%;
@@ -405,4 +452,94 @@ footer .footer-end{
     border-top: 1px solid #dadada;
     height: 10vh;
     width: 100%;
+}
+.menu-bc{
+    height: 100vh;
+    width: 100%;
+    background-color:#00000062;
+    position: fixed;
+    z-index: 99;
+    top: -100;
+}
+@media (max-width:600px) {
+    .page1{
+        min-height: 100vh;
+        width: 100vw;
+        padding: 0 0vw;
+    }
+    header{
+        padding: 8vw 5vw;
+        background-color: #EFEAE3;
+    }
+    header .menu{
+        display: block;
+    }
+    .menu h3{
+        display: block;
+        padding: 3vw 5vw;
+        border: 1px solid #ababab;
+        border-radius: 50px;
+        font-size: 4vw;
+        font-weight: 200;
+        padding-left: 10vw;
+    }
+    .logo img{
+        transition: all ease 0.2s;
+        height: 9vh;
+    }
+    nav ul{
+        display: none; 
+    }
+    .main-text{
+        height: 60vh;
+        width: 100%;
+        /* background-color: orange; */
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        border-bottom: 1px solid #0000003c;
+        padding: 2vw 5vw;
+        padding-bottom: 2vw;
+        flex-direction: column-reverse;
+        position: relative;
+        z-index: 9;
+    }
+    .left h2{
+        padding-top: 2vw;
+        width: 80%;
+        text-align: left;
+        font-size: 5vw;
+        line-height: 6vw;
+    }
+    .right h1{
+        padding-top: 6vw;
+        font-size: 13vw;
+        text-align: right;
+        line-height: 11vw;
+    }
+    .page1 video{
+        position: relative;
+        border-radius: 15px;
+        margin-top: 4vw;
+        height: 70vh;
+        object-fit: cover;
+        object-position: center;
+        width: 92%;
+        margin-left: 4%;
+    }
+    .page2{
+        min-height: 100vh;
+        width: 100%;
+        background-color: #EFEAE3;
+        padding: 8vw 0;
+        position: relative;
+    }
+    .moving-text{
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    .moving-text::-webkit-scrollbar {
+        display: none;
+    }
+
 }
