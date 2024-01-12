@@ -1,25 +1,22 @@
-
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #111111; 
-
+    background-color: #111111;
 }
 
 .text-color-black {
     color: #111111;
-
 }
+
 .container {
     position: relative;
     height: 100vh;
     margin: 5px;
-    background-image: url('/assert/img/bc.svg');
+    background-image: url('../img/bc.svg');
     background-size: 90%;
     background-repeat: no-repeat;
     background-position: center;
-
 }
 
 .text-overlay {
@@ -29,7 +26,6 @@ body {
     transform: translateX(-50%);
     font-size: 1rem;
     color: #fff;
-
 }
 
 .header .logo {
@@ -50,7 +46,6 @@ header nav ul {
     margin-right: 35%;
     display: flex;
     justify-content: space-between;
-
 }
 
 .right-menu ul {
@@ -58,37 +53,38 @@ header nav ul {
     list-style: none;
     float: right;
     margin-right: 14%;
-
 }
 
 .right-menu ul li img {
     width: 22px;
-
 }
 
 .right-menu ul li {
     margin: 0 20px;
     font-size: 20px;
-
 }
 
-.hero .hero-heading{
+.hero .hero-heading {
     margin: 10% 0% 0% 10%;
 }
-.hero .sub-hero-heading{
+
+.hero .sub-hero-heading {
     color: #111111;
     font-size: 30px;
     width: 50vw;
 }
-.hero .hero-heading h1{
+
+.hero .hero-heading h1 {
     font-size: 58px;
     color: #111111;
 }
-.main-link{
+
+.main-link {
     display: flex;
     margin-top: 40px;
 }
-.account{
+
+.account {
     padding: 15px 30px;
     font-size: 15px;
     background-color: #111111;
@@ -96,70 +92,60 @@ header nav ul {
     font-weight: bold;
     border-radius: 50px;
 }
-.get-a-demo{
+
+.get-a-demo {
     margin-top: 5px;
     margin-left: 25px;
     color: #111111;
     font-weight: bold;
 }
 
-.right-arrow{
+.right-arrow {
     border: 1px solid #111111;
     border-radius: 50%;
     border-spacing: 15px;
     width: 25px;
 }
-.right-arrow span{
+
+.right-arrow span {
     margin-top: 30px;
     rotate: 315deg;
 }
+
 @media only screen and (max-width: 1660px) {
     .header .logo {
         margin: 0px 100px;
         position: relative;
-
     }
-
     header nav ul {
         margin-left: 32%;
         margin-right: 35%;
         justify-content: space-around;
-
     }
-
     .right-menu ul {
         float: end;
         margin-right: 10%;
-
     }
-
     .right-menu ul li {
         margin: 10px;
-
     }
 }
+
 @media only screen and (max-width: 768px) {
     .header .logo {
         margin: 0;
         position: relative;
-
     }
-
     header nav ul {
         margin-left: 0;
         margin-right: 0;
         justify-content: space-around;
-
     }
-
     .right-menu ul {
         float: none;
         margin-right: 0;
-
     }
-
     .right-menu ul li {
         margin: 0;
-
     }
 }
