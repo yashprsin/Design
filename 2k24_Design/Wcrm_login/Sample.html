@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+    }
+    
+    .login-container {
+        width: 300px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .login-form {
+        margin-top: 20px;
+    }
+    
+    .login-form label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .login-form input[type="email"],
+    .login-form input[type="password"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    .login-form input[type="checkbox"] {
+        margin-right: 10px;
+    }
+    
+    .login-form button {
+        width: 100%;
+        padding: 8px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    .login-form button:hover {
+        background-color: #0062cc;
+    }
+    
+    .login-form p {
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    .login-form a {
+        color: #007bff;
+        text-decoration: none;
+    }
+    
+    .login-form a:hover {
+        text-decoration: underline;
+    }
+</style>
+
+<body>
+    <div class="login-container">
+        <h2>Welcome back!</h2>
+        <p>Enter to get unlimited access to data & information.</p>
+        <form class="login-form">
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="password">Password*:</label><br>
+            <input type="password" id="password" name="password" required><br>
+            <input type="checkbox" id="remember" name="remember">
+            <label for="remember">Remember me</label><br>
+            <button type="submit">Log In</button>
+            <p>Or, <a href="#">Login with Google</a></p>
+            <p><a href="#">Forgot your password?</a></p>
+        </form>
+        <p>Don't have an account? <a href="#">Register here</a></p>
+    </div>
+</body>
+
+</html>
