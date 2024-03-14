@@ -1,44 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WCrm | Login</title>
     <link rel="stylesheet" href="assets/src/style-main.css">
+    <style>
+        /* Additional styles */
+        
+        .wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            /* Center content vertically */
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        .col-md-6 {
+            flex: 1;
+            max-width: 50%;
+        }
+        
+        .left {
+            padding: 20px;
+        }
+        /* Add any other necessary styles */
+    </style>
 </head>
+
 <body>
     <div class="wrapper">
         <div class="container main">
             <div class="row">
-                <div class="col-md-6 side-image">
-                    <!-------------      image     ------------->
-                    <!-- <img src="assets/img/yellow-circle.png" alt=""> -->
-                    <!-- <div class="text">
-                        <p>Join the community of developers <i>- Litweb</i></p>
-                    </div> -->
-                </div>
-                <div class="col-md-6 right">
-                    <div class="input-box">
-                        <header>Create account</header>
-                        <div class="input-field">
-                            <input type="text" class="input" id="email" required="" autocomplete="off">
-                            <label for="email">Email</label>
+                <div class="col-md-6 left">
+                    <div class="data">
+                        <div class="collection__data">
+                            <img src="assets/img/logo.png" alt="image" class="company__logo">
+                            <h2 class="greeting">Welcome back!</h2>
+                            <p class="description">Enter to get unlimited access to data & information</p>
                         </div>
-                        <div class="input-field">
-                            <input type="password" class="input" id="pass" required="">
-                            <label for="pass">Password</label>
-                        </div>
-                        <div class="input-field">
-
-                            <input type="submit" class="submit" value="Sign Up">
-                        </div>
-                        <div class="signin">
-                            <span>Already have an account? <a href="#">Log in here</a></span>
+                        <div class="input-box">
+                            <div class="input-field">
+                                <input type="text" class="input" id="username" required="" autocomplete="off">
+                                <label for="email">Username</label>
+                            </div>
+                            <div class="input-field">
+                                <input type="password" class="input" id="pass" required="">
+                                <label for="pass">Password</label>
+                            </div>
+                            <div class="checks">
+                                <label for="checked">
+                                    <input type="checkbox" name="rememberme" id="remember">
+                                    Remember me
+                                </label>
+                                <a href="#" class="forgot_pass">Forgot password</a>
+                            </div>
+                            <div class="input-field">
+                                <input type="submit" class="submit" value="Sign In">
+                            </div>
                         </div>
                     </div>
+                </div>
+                <div class="col-md-6 side-image">
+                    <!-- Your side image content goes here -->
                 </div>
             </div>
         </div>
     </div>
 </body>
+
 </html>
