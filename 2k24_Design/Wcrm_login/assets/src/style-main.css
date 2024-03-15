@@ -22,13 +22,13 @@
     background-repeat: repeat-x;
     border-radius: 10px 0 0 10px;
     position: relative;
-    min-width: 536px;
+    width: 100%;
+    /* min-width: 529 px; */
     height: 100%;
     /* Ensure the side image takes up full height */
 }
 
 .row {
-    /* height: 100vh; */
     width: 900px;
     height: 550px;
     border-radius: 10px;
@@ -92,7 +92,6 @@
     width: 85%;
     background: transparent;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    /* border-bottom: 1px solid rgba(0, 0, 0, 0.2); */
     outline: none;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -101,8 +100,8 @@
 
 .input-box .input-field label {
     position: absolute;
-    top: 15px;
-    left: 20px;
+    top: 17px;
+    left: 25px;
     font-size: 0.8rem;
     pointer-events: none;
     transition: .4s;
@@ -176,15 +175,6 @@ span a:hover {
 }
 
 @media only screen and (max-width: 768px) {
-    .side-image {
-        border-radius: 10px 10px 0 0;
-    }
-    img {
-        width: 35px;
-        position: absolute;
-        top: 20px;
-        left: 47%;
-    }
     .text {
         position: absolute;
         top: 70%;
@@ -195,7 +185,32 @@ span a:hover {
         font-size: 16px;
     }
     .row {
-        max-width: 420px;
+        min-width: 330px;
         width: 100%;
+    }
+    .data {
+        line-height: 0.5;
+    }
+    .collection__data {
+        margin-left: 0.5rem;
+    }
+    .company__logo {
+        width: 60px;
+        left: 11%;
+        top: 0;
+        margin-top: -1rem;
+        margin-left: -0.5rem;
+    }
+    .input-box h2 {
+        font-size: 1.5rem;
+    }
+    .description {
+        font-size: 0.5rem;
+        margin-bottom: 2rem;
+        font-size: 0.65rem;
+        margin-left: 2px;
+    }
+    .submit {
+        margin-left: 3px;
     }
 }
