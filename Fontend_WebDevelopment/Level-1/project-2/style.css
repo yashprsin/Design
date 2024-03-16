@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --background-color: #f5f3ef;
+    --white-color: #fff;
+    --black-color: #1e1e21;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: Helvetica, sans-serif;
+}
+header{
+    position: fixed;
+    display: flex;
+    top: 30px;
+    right: 25px;
+    
+}
+.menu-item{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: 1rem 1.5rem;
+    border-radius: 600px;
+    justify-content: center;
+    margin-left: 10px;
+    padding: 1.1rem 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.main-title>h1{
+    letter-spacing: -8px;
+    font-size: 9rem;
+    line-height: 100%;
+    color: var(--black-color);
+    margin: 3vw 3.9vw;
+    font-weight: 600;
+}
+.location{
+    font-size: 2rem;
+    letter-spacing: -1.5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4.5vw;
+    margin-top: -40px;
+}
+.location h4{
+    font-weight: 600;
+}
+.location> h4> i{
+    margin-right: 10px;
+}
+.hero-image{
+    margin-top: 2vw;
+    background-image: url(/Fontend_WebDevelopment/Level-1/project-2/img/hero.webp);
+    width: 100%;
+    height: 95vh;
+    background-position: center;
+    background-repeat: no-repear, repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about h4{
+    font-size: 5.5rem;
+    letter-spacing: -1.5px;
+    width: 60%;
+    line-height: 90px;
+    font-weight: 600;
+    margin: 2vw 2vw;
+}
+.right-part{
+    position: relative;
+    width: 20%;
+    height: 20px;
+    border-left: 1px  solid #000000;
+}

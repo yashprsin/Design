@@ -1,0 +1,94 @@
+*{
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width:  100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    display: flex;
+    background-color: rebeccapurple;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2px ;
+    box-shadow: 5px 8px 50px 5px #865fe182;
+}
+.left-part{
+    width: 500px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 2rem 0.75rem 2rem 2rem;
+
+}
+.logo{
+    position: relative;
+    width: 65px;
+}
+.first-heading{
+    font-size: 1.75rem;
+    width: 100%;
+    padding-left: 5px;
+
+}
+.description{
+    font-weight: 200;
+    padding-left: 7px;
+    font-size: 0.60rem;
+}
+form{
+    display: flex; 
+    flex-direction: column;
+    align-items: last baseline;
+}
+.username{
+    padding-top: 15px;
+}
+label>span{
+    color: red;
+    margin-left: 1px;
+}
+label{
+    padding-left: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    /* padding-bottom: px; */
+}
+input{
+    border-radius: 5px;
+    border: 0.5px solid #ccc;
+    margin-top: 3px;
+    padding: 5px 20px;
+}
+.checks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 9px;
+}
+.checks> label{
+    /* display: flex; */
+    font-size: 10px;
+}
+.right-part{
+    background-image: url(/2k24_Design/Wcrm_login/assets/img/bc.jpg);
+    width: 100%;
+    /* height: 100%; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
