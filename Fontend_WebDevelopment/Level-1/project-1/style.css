@@ -1,0 +1,167 @@
+/*=============== VARIABLES CSS ===============*/
+:root{
+    --white--color- : #fff;
+    --black--color- : #000;
+    --third--color : #ff4d28;
+}
+@font-face{
+    font-family: Gilroy;
+    font-weight: 100;
+    src: url(font/gilroy/Gilroy-UltraLight.ttf);
+}
+@font-face{
+    font-family: Gilroy;
+    font-weight: 200;
+    src: url(font/gilroy/Gilroy-Thin.ttf);
+}
+@font-face{
+    font-family: Gilroy;
+    font-weight: 500;
+    src: url(font/gilroy/Gilroy-Regular.ttf);
+}
+@font-face{
+    font-family: Gilroy;
+    font-weight: 600;
+    src: url(font/gilroy/Gilroy-SemiBold.ttf);
+}
+@font-face{
+    font-family: Gilroy;
+    font-weight: 700;
+    src: url(font/gilroy/Gilroy-Bold.ttf);
+}
+@font-face{
+    font-family: Gilroy;
+    font-weight: 800;
+    src: url(font/gilroy/Gilroy-ExtraBold.ttf);
+}
+@font-face{
+    font-family: Gilroy;
+    font-weight: 900;
+    src: url(font/gilroy/Gilroy-Heavy.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Gilroy;
+}
+html, body{
+    width:  100%;
+    height: 100%;
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+}
+header{
+    width:  100%;
+    height: 100px;
+}
+header nav{
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+}
+.part1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.menu__{
+    font-weight: 600;
+    border: 2px solid #000;
+    padding: 2px 10px;
+    border-radius: 50px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.part1 i{
+    font-weight: 600;
+    border: 2px solid #000;
+    padding: 2px 10px;
+    border-radius: 50px;
+
+}
+.logo-text{
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+button{
+    padding: 5px 10px;
+    font-weight: 600;
+
+    border-radius: 50px;
+}
+.login{
+    border: 1px solid var(--third--color);
+    background-color: var(--white--color-);
+    color: var(--third--color);
+}
+.sign-up{
+    border: 1px solid var(--white--color-);
+    background-color: var(--third--color);
+    color: var(--white--color-);
+}
+.title{
+    font-weight: 400;
+    font-size: 180px;
+    position: absolute;
+    width:  100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+img{
+    height: 450px;
+    width: 380px;
+    object-fit: cover;
+    object-position: top;
+    position: absolute;
+    border-radius: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50% , -50%) ;
+}
+#img1{
+    opacity: .1;
+    transform: translate( -50% , -50%) rotate(-24deg) ;
+}
+#img2{
+    opacity: .2;
+    transform: translate( -50% , -50%) rotate(-16deg) ;
+}
+#img3{
+    opacity: .6;
+    transform: translate( -50% , -50%) rotate(-8deg) ;
+}
+.left-text{
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.right-text{
+    position: absolute;
+    bottom: 5%;
+    right: 3%;
+    font-weight: 600;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.social{
+    justify-content: center;
+    font-size: 1.1rem;
+    align-items: center;
+}
+
+.right-text span{
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75rem;
+}
