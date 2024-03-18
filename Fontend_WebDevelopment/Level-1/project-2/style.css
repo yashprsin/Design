@@ -53,6 +53,7 @@ header{
     margin-top: -40px;
 }
 .location h4{
+    margin-top: 1vw;
     font-weight: 600;
 }
 .location> h4> i{
@@ -69,21 +70,29 @@ header{
     /* background-attachment: fixed; */
 }
 .about{
+    padding: 4.5vw;
     display: flex;
-    justify-content: center;
+    /* background-color: rgb(203, 161, 131); */
+    justify-content: space-between;
     align-items: center;
 }
-.about h4{
-    font-size: 5.5rem;
+.about h3{
+    border-right: 2px solid black;
+    font-size: 5.6rem;
     letter-spacing: -1.5px;
-    width: 60%;
+    width: 65%;
     line-height: 90px;
+    background-color: #fff;
     font-weight: 600;
-    margin: 2vw 2vw;
 }
-.right-part{
-    position: relative;
-    width: 20%;
-    height: 20px;
-    border-left: 1px  solid #000000;
+.about-part{
+    width:  33%;
+    background-color: blue;
+    padding:  1.8vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.about-part h4{
+    font-size: 2vw;
 }
