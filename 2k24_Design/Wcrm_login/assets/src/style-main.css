@@ -17,15 +17,11 @@
 
 .side-image {
     background-image: url("../img/bc.jpg");
-    background-position: right;
-    background-size: cover;
-    background-repeat: repeat-x;
-    border-radius: 10px 0 0 10px;
-    position: relative;
     width: 100%;
-    /* min-width: 529 px; */
     height: 100%;
-    /* Ensure the side image takes up full height */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 .row {
