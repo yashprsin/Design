@@ -72,7 +72,7 @@ input{
     border-radius: 5px;
     border: 0.5px solid #ccc;
     margin-top: 3px;
-    padding: 5px 20px;
+    padding: 9px 35px;
 }
 .checks{
     display: flex;
@@ -83,6 +83,11 @@ input{
 .checks> label{
     /* display: flex; */
     font-size: 10px;
+}
+button[type="submit"] {
+    padding: 8px 94px;
+    color: #fff;
+    background-color: rgb(153, 130, 238);
 }
 .right-part{
     background-image: url(/2k24_Design/Wcrm_login/assets/img/bc.jpg);
