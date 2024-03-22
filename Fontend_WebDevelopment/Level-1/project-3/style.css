@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+@font-face{
+    font-family: Gilroy;
+    font-weight: 100;
+    src: url(font/gilroy/Gilroy-UltraLight.ttf);
+}
+@font-face{
+    font-family: Gilroy;
+    font-weight: 200;
+    src: url(font/gilroy/Gilroy-Thin.ttf);
+}
+@font-face{
+    font-family: Gilroy;
+    font-weight: 500;
+    src: url(font/gilroy/Gilroy-Regular.ttf);
+}
+@font-face{
+    font-family: Gilroy;
+    font-weight: 600;
+    src: url(font/gilroy/Gilroy-SemiBold.ttf);
+}
+@font-face{
+    font-family: Gilroy;
+    font-weight: 700;
+    src: url(font/gilroy/Gilroy-Bold.ttf);
+}
+@font-face{
+    font-family: Gilroy;
+    font-weight: 800;
+    src: url(font/gilroy/Gilroy-ExtraBold.ttf);
+}
+@font-face{
+    font-family: Gilroy;
+    font-weight: 900;
+    src: url(font/gilroy/Gilroy-Heavy.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Gilroy;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+
+}
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 2.5vw;
+}
+header h2{
+    font-weight: 600;
+    font-size: 20px;
+}
+.nav-part1{
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+}
+.tab{
+    display: flex;
+}
+.tab h2{
+    margin-left: 10px;
+}
+.nav-part2{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+.wrap{
+    width: 60%;
+}
+.intro{
+    padding: 5vw;
+    width: 100%;
+    height: 60%;
+}
+.intro>h2{
+    padding-bottom: 20px;
+    padding-left: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.intro>h1{
+    font-weight: 500;
+    letter-spacing: -1.5px;
+    line-height: 120px;
+    font-size: 8rem;
+    padding-bottom: 6vw;
+}
+.Case-studies{
+    padding: 0 5vw;
+}
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.125rem;
+    padding-bottom: 2vw;
+}
+.head h2, .indicate{
+    font-weight: 600;
+}
+.line{
+    position: absolute;
+    height: 1.5px;
+    width: 150px;
+    top: 110%;
+    right: 10%;
+    background-color: #000;
+}
+.Case-studies img{
+    width: 35vw;
+    height: 40vw;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.footer-title h4{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.btn i{
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+.btn{
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 30px;
+    border-radius: 20px;
+    transition: all ease-in-out  .3s;
+}
+.btn:hover{
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #000;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
